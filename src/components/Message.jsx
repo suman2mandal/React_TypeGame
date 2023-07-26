@@ -7,14 +7,15 @@ function Message() {
     const [author,setAuthor] = useState('');
 
     const handleQuote=(data)=>{
-        return data.spit('').map((letter)=>{
-            return <span className='correct'>{letter}</span>
+        return data.split('').map((letter,index)=>{
+            return <span key={index} className='initial'>{letter}</span>
         });
     }
     useEffect(() => {
         const process = async()=>{
             const response = await axios.get('https://api.quotable.io/random');
             let processed = handleQuote(response.data.content);
+            // let processed = response.data.content;
             setQuote(processed);
             setAuthor(response.data.author);
         }

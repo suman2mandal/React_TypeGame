@@ -38,9 +38,13 @@
 }
 
 .correct{
-  background-color: green;
+  color: green;
 }
 
 .incorrect{
-  background-color: red;
+  color: red;
+}
+
+.initial{
+  color: blue;
 }
