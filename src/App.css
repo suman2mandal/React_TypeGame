@@ -1,10 +1,29 @@
 .App {
   text-align: center;
+  font-family:  sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  height: 100%;
+  width: 100%;
 }
 
+body{
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  height: 100%;
+  width:100%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,14 +56,40 @@
   }
 }
 
+.background{
+  background-color: #00171f;
+}
 .correct{
-  color: green;
+  color: #8ac926;
 }
 
 .incorrect{
-  color: red;
+  color: #ff595e;
+  text-decoration: underline;
 }
 
 .initial{
-  color: blue;
+  color: #1982c4;
+}
+
+.WriterName{
+  color: darkgray;
+}
+.TypingAria{
+
+}
+.TypingAria:hover{
+}
+.notification{
+  color:white;
+  font-size: xx-large;
+}
+.notification:hover{
+  cursor: pointer;
+  color:white;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: #095256;
 }
